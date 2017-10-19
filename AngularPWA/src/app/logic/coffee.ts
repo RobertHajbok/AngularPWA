@@ -4,6 +4,7 @@ import { PlaceLocation } from "./place-location";
 export class Coffee {
 
     // Properties
+    id: number;
     type: string;
     rating: number;
     notes: string;
