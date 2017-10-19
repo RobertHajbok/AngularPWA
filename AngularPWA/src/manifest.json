@@ -1,0 +1,28 @@
+{
+  "name": "Angular Progressive Web Application",
+  "start_url": "/",
+  "orientation": "any",
+  "scope": "/",
+  "display": "standalone",
+  "short_name": "Angular PWA",
+  "theme_color": "#472D21",
+  "background_color": "#C0B764",
+  "icons": [
+    {
+      "src": "icons/icon_96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icons/icon_144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "icons/icon_192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/icon_512.png",
+      "sizes": "512x512"
+    }
+  ]
+}

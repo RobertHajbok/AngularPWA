@@ -3,12 +3,25 @@
 <head>
   <meta charset="utf-8">
   <title>Angular PWA</title>
-  <base href="/">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <base href="/" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <meta name="theme-color" content="#472D21" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="icons/icon_96.png" />
+
+  <!-- iOS Meta Tags for PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="AngularPWA" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="icons/icon_ios_180.png" sizes="180x180" />
+  <link rel="apple-touch-icon" href="icons/icon_ios_120.png" sizes="120x120" />
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+    <img src="icons/icon_96.png" srcset="icons/icon_144.png 3x, icons/icon_192.png 4x" alt="App Icon" width="48" height="48" />
+    <h1>My Coffee App</h1>
+    <h2>Please wait...</h2>
+  </app-root>
 </body>
 </html>

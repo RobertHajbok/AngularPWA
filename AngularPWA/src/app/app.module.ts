@@ -9,10 +9,11 @@ import { GeolocationService } from "./geolocation.service";
 import { DataService } from "./data.service";
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatIconModule, MatInputModule, MatSelectModule, MatSliderModule, MatToolbarModule, MatCardModule, MatSlideToggleModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatInputModule, MatSelectModule, MatSliderModule, MatToolbarModule, MatCardModule, MatSlideToggleModule, MatSnackBarModule } from '@angular/material';
 import 'hammerjs';
 import { ListComponent } from './list/list.component';
 import { CoffeeComponent } from './coffee/coffee.component';
+import { ServiceWorkerModule } from "@angular/service-worker";
 
 const routes: Routes = [
     { path: '', component: ListComponent },
@@ -39,7 +40,9 @@ const routes: Routes = [
         MatToolbarModule,
         MatCardModule,
         MatSlideToggleModule,
-        RouterModule.forRoot(routes)
+        MatSnackBarModule,
+        RouterModule.forRoot(routes),
+        ServiceWorkerModule
     ],
     providers: [GeolocationService, DataService],
     bootstrap: [AppComponent]
