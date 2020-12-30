@@ -28,10 +28,10 @@ export class AppComponent implements AfterViewInit {
         this.swPush.requestSubscription({ serverPublicKey: 'replace-with-your-public-key' })
           .then((registration: PushSubscription) => {
             console.log(registration);
-            //TODO Send that object to our server
-          })
+            //TODO: Send that object to our server
+          });
       }
-    })
+    });
   }
 
   ngAfterViewInit() {
@@ -43,7 +43,7 @@ export class AppComponent implements AfterViewInit {
           this.swUpdate.activateUpdate().then(event => {
             console.log('The App was updated');
             location.reload();
-          })
+          });
         });
       });
       this.swUpdate.checkForUpdate();
