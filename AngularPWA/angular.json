@@ -18,8 +18,8 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/manifest.json",
-              "src/icons"
+              "src/icons",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.css"
@@ -31,7 +31,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -78,9 +77,7 @@
             ],
             "assets": [
               "src/assets",
-              "src/manifest.json",
               "src/icons",
-              "src/manifest.webmanifest",
               "src/manifest.webmanifest"
             ]
           }

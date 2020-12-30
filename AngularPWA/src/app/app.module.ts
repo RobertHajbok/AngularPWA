@@ -14,7 +14,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { GeolocationService } from "./geolocation.service";
@@ -49,7 +48,7 @@ const routes: Routes = [
     MatCardModule,
     MatSlideToggleModule,
     MatSnackBarModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [GeolocationService, DataService],
