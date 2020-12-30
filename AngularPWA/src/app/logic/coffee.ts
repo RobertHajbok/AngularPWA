@@ -2,7 +2,6 @@ import { TastingRating } from "./tasting-rating";
 import { PlaceLocation } from "./place-location";
 
 export class Coffee {
-
     // Properties
     id: number;
     type: string;
@@ -14,5 +13,4 @@ export class Coffee {
         this.location = new PlaceLocation();
         this.tastingRating = new TastingRating();
     }
-
 }
