@@ -44,17 +44,7 @@ Angular Progresive Web Application setup and steps
         ```
       - Build and run the Web Application. The client-side should be built using --prod in order to test service workers.
         ```
-          ng build -- prod & dotnet run
-        ```
-      - Enable automatic re-compilation for ASP.NET Core by adding the following ItemGroup to the .csproj file
-        ```
-          <ItemGroup>
-             <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="1.0.0" />
-          </ItemGroup>
-        ```
-      - Open a terminal in the project directory and start the ASP.NET Core server
-        ```
-          dotnet watch run
+          ng build -- prod & dotnet watch run
         ```
      - Open another terminal and start the Angular application using the port above
         ```
